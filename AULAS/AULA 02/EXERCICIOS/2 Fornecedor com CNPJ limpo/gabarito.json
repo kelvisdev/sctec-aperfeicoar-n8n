@@ -154,8 +154,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nO Limpar Dados arruma o nome da empresa e deixa o CNPJ só com números. O IF confere se sobraram 14 dígitos\n\n**Compare**\nA Papelaria Boa Vista vai para a tabela. A Limpa Tudo tem só 12 dígitos e cai em CNPJ invalido",
-        "height": 440,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nO **Limpar Dados** arruma o nome da empresa e deixa o CNPJ só com números. O IF confere se sobraram 14 dígitos.\n\n### Compare\n\nA Papelaria Boa Vista vai para a tabela. A Limpa Tudo tem só 12 dígitos e cai em **CNPJ invalido**.",
+        "height": 300,
         "width": 760,
         "color": 4
       },
@@ -163,15 +163,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -580
+        -440
       ],
       "id": "d018beea-df0b-4ff0-afa9-f0a9ac308dab",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "`replace(/\\D/g, '')` apaga tudo que não é número. Pontos, barra e traço somem",
-        "height": 220,
+        "content": "### Só números\n\n`replace(/\\D/g, '')` apaga tudo que não é número. Pontos, barra e traço somem.",
+        "height": 180,
         "width": 220,
         "color": 5
       },
@@ -186,8 +186,8 @@
     },
     {
       "parameters": {
-        "content": "`.length` conta quantos caracteres o texto tem. Depois do replace, só sobram números",
-        "height": 220,
+        "content": "### Contar dígitos\n\n`.length` conta quantos caracteres o texto tem. Depois do replace, só sobram números.",
+        "height": 200,
         "width": 220,
         "color": 5
       },
@@ -202,7 +202,7 @@
     },
     {
       "parameters": {
-        "content": "Escolha a sua tabela. Crie no seu n8n uma Data Table fornecedores com as colunas empresa, cnpj e categoria",
+        "content": "### Escolha a sua tabela\n\nCrie no seu n8n uma Data Table `fornecedores` com as colunas `empresa`, `cnpj` e `categoria`",
         "height": 200,
         "width": 240,
         "color": 3

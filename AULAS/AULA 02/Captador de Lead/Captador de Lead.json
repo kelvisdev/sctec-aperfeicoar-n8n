@@ -34,8 +34,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que faz**\nMostra os dois erros mais comuns na resposta do webhook. Do jeito que está, quem chama recebe Workflow was started e nunca o AGORA FOI\n\n**Como testar**\nClique em Execute workflow, copie a Test URL do gatilho e mande um POST. O comando está no README\n\n**O que treinar**\n1. Ligue o Responder a chamada depois do gatilho e troque o Respond do gatilho para Using Respond to Webhook Node. Agora chega o AGORA FOI\n2. Desligue o Responder a chamada e não mexa no Respond. A chamada volta com erro 500\n\n**Erros comuns**\nErro 500 é o Respond esperando um nó de resposta que não está ligado. Erro 404 é a Test URL que já parou de escutar",
-        "height": 460,
+        "content": "## Leia primeiro\n\n### O que faz\n\nMostra os dois erros mais comuns na resposta do webhook. Do jeito que está, quem chama recebe `Workflow was started` e nunca o `AGORA FOI`\n\n### Como testar\n\nClique em **Execute workflow**, copie a Test URL do gatilho e mande um POST. O comando está no README.\n\n### O que treinar\n\n1. Ligue o **Responder a chamada** depois do gatilho e troque o Respond do gatilho para **Using Respond to Webhook Node**. Agora chega o `AGORA FOI`\n2. Desligue o **Responder a chamada** e não mexa no Respond. A chamada volta com erro 500.\n\n### Erros comuns\n\nErro 500 é o Respond esperando um nó de resposta que não está ligado. Erro 404 é a Test URL que já parou de escutar.",
+        "height": 520,
         "width": 820,
         "color": 4
       },
@@ -43,16 +43,16 @@
       "typeVersion": 1,
       "position": [
         -96,
-        -540
+        -600
       ],
       "id": "2264b953-2ee2-43ea-a9e9-fb28464baade",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "O Respond deste gatilho está em Immediately. Ele responde na hora, antes de qualquer outro nó rodar",
+        "content": "### Respond Immediately\n\nO Respond deste gatilho está em **Immediately**. Ele responde na hora, antes de qualquer outro nó rodar.",
         "height": 200,
-        "width": 220,
+        "width": 240,
         "color": 5
       },
       "type": "n8n-nodes-base.stickyNote",
@@ -66,9 +66,9 @@
     },
     {
       "parameters": {
-        "content": "Solto de propósito. Sem ligação com o gatilho, este nó nunca roda",
-        "height": 200,
-        "width": 220,
+        "content": "### Nó solto\n\nSolto de propósito. Sem ligação com o gatilho, este nó nunca roda.",
+        "height": 180,
+        "width": 240,
         "color": 5
       },
       "type": "n8n-nodes-base.stickyNote",
@@ -79,6 +79,22 @@
       ],
       "id": "9ab20f28-b631-40cc-a671-4c3d0a655870",
       "name": "Nota resposta solta"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code",
+        "height": 380,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        792,
+        -600
+      ],
+      "id": "8a9c1cff-c516-4d19-a979-36befff48929",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

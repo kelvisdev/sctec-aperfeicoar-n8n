@@ -84,8 +84,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nO IF compara a chance de chuva com 70. Com 80, a visita vai para Reagendar visita\n\n**Compare**\nTroque chuva para 40 no Previsao de Amanha. Agora a visita cai em Visita mantida",
-        "height": 440,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nO IF compara a chance de chuva com 70. Com 80, a visita vai para **Reagendar visita**.\n\n### Compare\n\nTroque a `chuva` para 40 no **Previsao de Amanha**. Agora a visita cai em **Visita mantida**.",
+        "height": 280,
         "width": 720,
         "color": 4
       },
@@ -93,14 +93,14 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -580
+        -420
       ],
       "id": "54420520-7d3d-458a-a691-d10f574594da",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Os números da previsão estão fixos, digitados em modo JSON. Numa aula mais à frente eles vêm de uma API de clima",
+        "content": "### Previsão fixa\n\nOs números da previsão estão fixos, digitados em modo JSON. Numa aula mais à frente eles vêm de uma API de clima.",
         "height": 220,
         "width": 220,
         "color": 5
@@ -116,8 +116,8 @@
     },
     {
       "parameters": {
-        "content": "Number, is greater than or equal. A chuva está sem aspas no JSON, então já chega como número",
-        "height": 220,
+        "content": "### A comparação\n\nNumber, **is greater than or equal**. A chuva está sem aspas no JSON, então já chega como número.",
+        "height": 200,
         "width": 220,
         "color": 5
       },

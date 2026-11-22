@@ -31,8 +31,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que faz**\nEspera uma chamada GET no caminho cadastro e passa para o Normalizar tudo o que chegou\n\n**Como testar**\nClique em Execute workflow, abra o Webhook Boas Vindas e copie a Test URL. Cole no navegador com ?nome=Ana no fim e volte para o n8n\n\n**O que treinar**\nO Normalizar está vazio de propósito. Crie nele um campo nome com o valor que veio na URL\n\n**Erros comuns**\nA Test URL escuta uma chamada só. Se o navegador mostrar 404, clique em Execute workflow de novo e recarregue a página",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### O que faz\n\nEspera uma chamada GET no caminho `cadastro` e passa para o **Normalizar** tudo o que chegou.\n\n### Como testar\n\nClique em **Execute workflow**, abra o **Webhook Boas Vindas** e copie a Test URL. Cole no navegador com `?nome=Ana` no fim e volte para o n8n.\n\n### O que treinar\n\nO **Normalizar** está vazio de propósito. Crie nele um campo `nome` com o valor que veio na URL.\n\n### Erros comuns\n\nA Test URL escuta uma chamada só. Se o navegador mostrar 404, clique em **Execute workflow** de novo e recarregue a página.",
+        "height": 540,
         "width": 520,
         "color": 4
       },
@@ -40,15 +40,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -480
+        -600
       ],
       "id": "3f06fbaa-783d-4e56-ade6-9a7aef1fa552",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "A Test URL só funciona depois de clicar em Execute workflow. A Production URL só funciona com o fluxo publicado",
-        "height": 200,
+        "content": "### Teste ou produção\n\nA Test URL só funciona depois de clicar em **Execute workflow**. A Production URL só funciona com o fluxo publicado.",
+        "height": 220,
         "width": 220,
         "color": 5
       },
@@ -63,8 +63,8 @@
     },
     {
       "parameters": {
-        "content": "O que vem depois do ? na URL chega em query. Para pegar o nome, use\n`{{ $json.query.nome }}`",
-        "height": 200,
+        "content": "### Ler a URL\n\nO que vem depois do `?` na URL chega em `query`. Para pegar o nome, use.\n\n`{{ $json.query.nome }}`",
+        "height": 220,
         "width": 220,
         "color": 5
       },
@@ -76,6 +76,22 @@
       ],
       "id": "81e6c0a9-9f4b-43a3-a347-9352a8db840c",
       "name": "Nota Normalizar"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code\n\nNum GET, o navegador também serve.",
+        "height": 420,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        512,
+        -600
+      ],
+      "id": "04745e77-accd-4c57-a8b7-e327f0b5f69e",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

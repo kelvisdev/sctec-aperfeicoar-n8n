@@ -36,8 +36,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nO texto da resposta usa duas expressões, uma para o curso e outra para o nome. As duas leem o que veio depois do ? na URL\n\n**Compare**\nTroque a URL para ?nome=Bia&curso=Python e veja a mensagem mudar sem mexer no fluxo",
-        "height": 400,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nO texto da resposta usa duas expressões, uma para o curso e outra para o nome. As duas leem o que veio depois do `?` na URL.\n\n### Compare\n\nTroque a URL para `?nome=Bia&curso=Python` e veja a mensagem mudar sem mexer no fluxo.",
+        "height": 320,
         "width": 560,
         "color": 4
       },
@@ -45,14 +45,14 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -440
+        -360
       ],
       "id": "7c914e4c-1e14-4ce9-abe1-06b9cc0a6f42",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Tudo o que vem depois do ? na URL chega no campo query. Cada par nome=valor vira um campo",
+        "content": "### Dados da URL\n\nTudo o que vem depois do `?` na URL chega no campo `query`. Cada par `nome=valor` vira um campo.",
         "height": 200,
         "width": 240,
         "color": 5
@@ -68,7 +68,7 @@
     },
     {
       "parameters": {
-        "content": "O Response Body está em Expression. Por isso as chaves viram o valor que veio na URL",
+        "content": "### Response Body\n\nO Response Body está em **Expression**. Por isso as chaves viram o valor que veio na URL.",
         "height": 200,
         "width": 240,
         "color": 5
@@ -81,6 +81,22 @@
       ],
       "id": "368bec13-928e-4853-a877-7a8dcff6e868",
       "name": "Nota resposta"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code\n\nNum GET, o navegador também serve.",
+        "height": 420,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        552,
+        -360
+      ],
+      "id": "18b86c78-f931-4ffd-ae9c-9d0c9fe8d718",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

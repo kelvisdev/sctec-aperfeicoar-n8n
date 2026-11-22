@@ -37,8 +37,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nUm campo etiqueta com três expressões. O nome e o sobrenome passam pelo toUpperCase, a empresa sai como veio\n\n**Compare**\nSe o seu ficou diferente e a saída está igual, está certo também",
-        "height": 380,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nUm campo `etiqueta` com três expressões. O nome e o sobrenome passam pelo `toUpperCase()`, a empresa sai como veio.\n\n### Compare\n\nSe o seu ficou diferente e a saída está igual, está certo também.",
+        "height": 300,
         "width": 520,
         "color": 4
       },
@@ -46,14 +46,14 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -420
+        -340
       ],
       "id": "00731542-5c3f-478c-af03-73993de57661",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "O | e os espaços ficam fora das chaves, então aparecem do jeito que foram escritos",
+        "content": "### Texto fora das chaves\n\nO `|` e os espaços ficam fora das chaves, então aparecem do jeito que foram escritos.",
         "height": 200,
         "width": 240,
         "color": 5

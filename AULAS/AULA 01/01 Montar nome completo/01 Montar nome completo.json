@@ -37,8 +37,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que faz**\nPega um aluno com nome e sobrenome e monta o campo nomecompleto, no formato Borges, Kelvis\n\n**Como testar**\nClique em Execute workflow e abra o Normalizar Dados. O gatilho já tem dados fixados, então você não precisa digitar nada\n\n**O que treinar**\nTroque o nome e o sobrenome nos dados fixados e rode de novo. Depois mude a expressão para sair Kelvis Borges, sem vírgula\n\n**Erros comuns**\nCampo vazio na saída quase sempre é nome escrito diferente. Para o n8n, aluno.nome e Aluno.Nome são campos diferentes",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### O que faz\n\nPega um aluno com nome e sobrenome e monta o campo `nomecompleto`, no formato `Borges, Kelvis`\n\n### Como testar\n\nClique em **Execute workflow** e abra o **Normalizar Dados**. O gatilho já tem dados fixados, então você não precisa digitar nada.\n\n### O que treinar\n\nTroque o nome e o sobrenome nos dados fixados e rode de novo. Depois mude a expressão para sair `Kelvis Borges`, sem vírgula.\n\n### Erros comuns\n\nCampo vazio na saída quase sempre é nome escrito diferente. Para o n8n, `aluno.nome` e `Aluno.Nome` são campos diferentes.",
+        "height": 520,
         "width": 520,
         "color": 4
       },
@@ -46,15 +46,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -460
+        -560
       ],
       "id": "4438f8a0-a02e-438e-af92-88c463973ecf",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "O alfinete no gatilho mostra que os dados estão fixados (pin). Eles ficam salvos no fluxo e servem para testar sem esperar ninguém mandar nada",
-        "height": 200,
+        "content": "### Dados fixados\n\nO alfinete no gatilho mostra que os dados estão fixados (pin). Eles ficam salvos no fluxo e servem para testar sem esperar ninguém mandar nada.",
+        "height": 240,
         "width": 220,
         "color": 5
       },
@@ -69,8 +69,8 @@
     },
     {
       "parameters": {
-        "content": "Duas expressões no mesmo campo. O que fica fora das chaves, como a vírgula e o espaço, sai do jeito que está escrito",
-        "height": 200,
+        "content": "### A expressão\n\nSão duas expressões no mesmo campo. O que fica fora das chaves, como a vírgula e o espaço, sai do jeito que está escrito.",
+        "height": 220,
         "width": 220,
         "color": 5
       },

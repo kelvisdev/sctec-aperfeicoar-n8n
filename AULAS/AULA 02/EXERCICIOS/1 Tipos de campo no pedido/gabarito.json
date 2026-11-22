@@ -61,8 +61,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nQuantidade, preço e total saem como número. Entregue sai como verdadeiro ou falso, a partir de uma comparação com a palavra sim\n\n**Compare**\nTroque entregue para nao nos dados fixados. O campo tem que sair false",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nQuantidade, preço e total saem como número. O `entregue` sai como verdadeiro ou falso, a partir de uma comparação com a palavra sim.\n\n### Compare\n\nTroque o `entregue` para `nao` nos dados fixados. O campo tem que sair `false`",
+        "height": 320,
         "width": 560,
         "color": 4
       },
@@ -70,15 +70,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -460
+        -360
       ],
       "id": "92836ada-3207-488b-a5ab-c16a8bd9678b",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Nos dados fixados tudo está entre aspas, ou seja, é texto. Até o 4 e o 12.50",
-        "height": 200,
+        "content": "### Tudo é texto\n\nNos dados fixados tudo está entre aspas, ou seja, é texto. Até o 4 e o 12.50.",
+        "height": 180,
         "width": 220,
         "color": 5
       },
@@ -93,8 +93,8 @@
     },
     {
       "parameters": {
-        "content": "A comparação com === devolve true ou false. É isso que o Boolean aceita",
-        "height": 200,
+        "content": "### Boolean\n\nA comparação com `===` devolve `true` ou `false`. É isso que o Boolean aceita.",
+        "height": 180,
         "width": 240,
         "color": 5
       },

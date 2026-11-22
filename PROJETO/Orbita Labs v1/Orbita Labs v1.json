@@ -60,8 +60,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que faz**\nPrimeira versão do projeto. A página da Orbita Labs manda o pedido por POST e o fluxo responde agradecendo pelo nome\n\n**Como testar**\nClique em Execute workflow, copie a Test URL do Disparo de Gatilho e mande um POST com o campo nome. O comando está no README\n\n**O que treinar**\nMande o nome com espaços sobrando e veja que eles somem na resposta. Depois mande sem nome nenhum\n\n**Erros comuns**\nSe a página fica sem resposta, confira o Allowed Origins do gatilho. Sem o * o navegador bloqueia a chamada",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### O que faz\n\nPrimeira versão do projeto. A página da Orbita Labs manda o pedido por POST e o fluxo responde agradecendo pelo nome.\n\n### Como testar\n\nClique em **Execute workflow**, copie a Test URL do **Disparo de Gatilho** e mande um POST com o campo `nome`. O comando está no README.\n\n### O que treinar\n\nMande o nome com espaços sobrando e veja que eles somem na resposta. Depois mande sem nome nenhum.\n\n### Erros comuns\n\nSe a página fica sem resposta, confira o Allowed Origins do gatilho. Sem o `*` o navegador bloqueia a chamada.",
+        "height": 520,
         "width": 680,
         "color": 4
       },
@@ -69,15 +69,15 @@
       "typeVersion": 1,
       "position": [
         -96,
-        -520
+        -620
       ],
       "id": "20d0e438-882c-45f5-a6b4-3d07f02f3f02",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "O ?? troca o nome que não veio por um texto vazio, e o fluxo não quebra. O trim tira os espaços do começo e do fim",
-        "height": 200,
+        "content": "### O ?? e o trim\n\nO `??` troca o nome que não veio por um texto vazio, e o fluxo não quebra. O `trim()` tira os espaços do começo e do fim.",
+        "height": 220,
         "width": 240,
         "color": 5
       },
@@ -89,6 +89,22 @@
       ],
       "id": "57093d28-6752-4b8e-adaf-da1504ca7b39",
       "name": "Nota resposta"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code",
+        "height": 380,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        680,
+        -620
+      ],
+      "id": "bc42f696-5882-40b9-ac7e-8ff65f7fa4d6",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

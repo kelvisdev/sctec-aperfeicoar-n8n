@@ -30,8 +30,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\nNo Montar Etiqueta, crie um campo etiqueta que saia assim\nANA SOUZA | Padaria Pão Quente\n\n**Como testar**\nClique em Execute workflow e abra o Montar Etiqueta. Os dados do participante já estão fixados no gatilho\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 380,
+        "content": "## Leia primeiro\n\n### O que fazer\n\nNo **Montar Etiqueta**, crie um campo `etiqueta` que saia como no exemplo abaixo.\n\n`ANA SOUZA | Padaria Pão Quente`\n\n### Como testar\n\nClique em **Execute workflow** e abra o **Montar Etiqueta**. Os dados do participante já estão fixados no gatilho.\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 460,
         "width": 520,
         "color": 4
       },
@@ -39,15 +39,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -420
+        -500
       ],
       "id": "0303e28b-5ea1-49df-a781-0adbe63f8cf7",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Arraste participante.nome do painel da esquerda para o valor. O n8n escreve a expressão para você. Depois acrescente o toUpperCase()",
-        "height": 200,
+        "content": "### Dica\n\nArraste `participante.nome` do painel da esquerda para o valor. O n8n escreve a expressão para você. Depois acrescente o `toUpperCase()`",
+        "height": 220,
         "width": 240,
         "color": 5
       },

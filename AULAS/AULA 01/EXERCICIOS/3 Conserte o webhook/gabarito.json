@@ -66,8 +66,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**Gabarito**\nTrês consertos. O gatilho passou de GET para POST. O nome passou a ser lido do body, e não da query. A palavra Inscrição ganhou o til\n\n**Compare**\nMande o mesmo POST do README e veja a resposta completa",
-        "height": 400,
+        "content": "## Leia primeiro\n\n### Gabarito\n\nTrês consertos.\n\n1. O gatilho passou de GET para POST.\n2. O nome passou a ser lido do `body`, e não da `query`\n3. A palavra Inscrição ganhou o til.\n\n### Compare\n\nMande o mesmo POST do README e veja a resposta completa.",
+        "height": 360,
         "width": 720,
         "color": 4
       },
@@ -75,15 +75,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -440
+        -400
       ],
       "id": "dd7c1af8-f8d7-42a0-abe0-dda07c62bf33",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Um POST manda os dados no corpo da chamada. Por isso eles chegam em body",
-        "height": 200,
+        "content": "### Body\n\nUm POST manda os dados no corpo da chamada. Por isso eles chegam em `body`",
+        "height": 180,
         "width": 260,
         "color": 5
       },
@@ -95,6 +95,22 @@
       ],
       "id": "5c001081-1b37-4b5d-ad42-74fe25bfd47b",
       "name": "Nota dica"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code",
+        "height": 380,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        720,
+        -400
+      ],
+      "id": "77fdcc6f-f8b5-4c2c-a5fc-503fd43d68e3",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

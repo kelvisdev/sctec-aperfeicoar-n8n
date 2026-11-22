@@ -65,8 +65,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\nEste fluxo tem 3 defeitos. Ache e conserte até a resposta sair assim\nInscrição confirmada, Ana! Sua turma é a T1.\n\n**Como testar**\nClique em Execute workflow, copie a Test URL do Receber Inscricao e mande um POST com nome e turma. O comando está no README\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 400,
+        "content": "## Leia primeiro\n\n### O que fazer\n\nEste fluxo tem 3 defeitos. Ache e conserte até a resposta sair como no exemplo abaixo.\n\n`Inscrição confirmada, Ana! Sua turma é a T1.`\n\n### Como testar\n\nClique em **Execute workflow**, copie a Test URL do **Receber Inscricao** e mande um POST com `nome` e `turma`. O comando está no README.\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 420,
         "width": 720,
         "color": 4
       },
@@ -74,15 +74,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -440
+        -460
       ],
       "id": "bc42a18a-65f4-429a-ad40-290d2cbebe06",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Leia a mensagem de erro que volta na chamada. Ela já diz qual é o primeiro defeito",
-        "height": 200,
+        "content": "### Dica\n\nLeia a mensagem de erro que volta na chamada. Ela já diz qual é o primeiro defeito.",
+        "height": 180,
         "width": 260,
         "color": 5
       },
@@ -94,6 +94,22 @@
       ],
       "id": "50f367c3-6287-439d-a294-ab3cff79aab3",
       "name": "Nota dica"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code\n\nNum GET, o navegador também serve.",
+        "height": 420,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        720,
+        -460
+      ],
+      "id": "d6e31e68-5d66-4df9-a982-a09f5a53a372",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

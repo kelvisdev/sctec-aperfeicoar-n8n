@@ -84,8 +84,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\nUma empresa de manutenção quer remarcar a visita quando a chance de chuva for de 70% ou mais. Configure o IF Chuva forte? para mandar essas visitas para Reagendar visita\n\n**Como testar**\nClique em Execute workflow e veja por qual saída o item passou. Depois troque o número da chuva e rode de novo\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 440,
+        "content": "## Leia primeiro\n\n### O que fazer\n\nUma empresa de manutenção quer remarcar a visita quando a chance de chuva for de 70% ou mais. Configure o IF **Chuva forte?** para mandar essas visitas para **Reagendar visita**.\n\n### Como testar\n\nClique em **Execute workflow** e veja por qual saída o item passou. Depois troque o número da chuva e rode de novo.\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 400,
         "width": 720,
         "color": 4
       },
@@ -93,14 +93,14 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -580
+        -540
       ],
       "id": "7605a2f0-610d-4aa5-a4c6-d112cb612ec6",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Os números da previsão estão fixos, digitados em modo JSON. Numa aula mais à frente eles vêm de uma API de clima",
+        "content": "### Previsão fixa\n\nOs números da previsão estão fixos, digitados em modo JSON. Numa aula mais à frente eles vêm de uma API de clima.",
         "height": 220,
         "width": 220,
         "color": 5
@@ -116,8 +116,8 @@
     },
     {
       "parameters": {
-        "content": "Escolha a comparação de Number. A chuva está sem aspas no JSON, então já é número",
-        "height": 220,
+        "content": "### Dica\n\nEscolha a comparação de Number. A chuva está sem aspas no JSON, então já é número.",
+        "height": 200,
         "width": 220,
         "color": 5
       },

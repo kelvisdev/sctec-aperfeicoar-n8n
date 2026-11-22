@@ -36,8 +36,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\nFaça o Responder Mensagem devolver o texto abaixo, com o nome e o curso que vierem na URL\nQue bom ter você no curso de Excel, Ana!\n\n**Como testar**\nClique em Execute workflow, copie a Test URL do Receber Visita e cole no navegador com ?nome=Ana&curso=Excel no fim\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 400,
+        "content": "## Leia primeiro\n\n### O que fazer\n\nFaça o **Responder Mensagem** devolver o texto abaixo, com o nome e o curso que vierem na URL.\n\n`Que bom ter você no curso de Excel, Ana!`\n\n### Como testar\n\nClique em **Execute workflow**, copie a Test URL do **Receber Visita** e cole no navegador com `?nome=Ana&curso=Excel` no fim.\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 440,
         "width": 560,
         "color": 4
       },
@@ -45,14 +45,14 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -440
+        -480
       ],
       "id": "4712c620-eb94-409a-aae7-f242cdfbca7e",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Tudo o que vem depois do ? na URL chega no campo query. Cada par nome=valor vira um campo",
+        "content": "### Dados da URL\n\nTudo o que vem depois do `?` na URL chega no campo `query`. Cada par `nome=valor` vira um campo.",
         "height": 200,
         "width": 240,
         "color": 5
@@ -68,7 +68,7 @@
     },
     {
       "parameters": {
-        "content": "Mude o Response Body para Expression antes de usar as chaves. Sem isso, o texto sai com as chaves e tudo",
+        "content": "### Response Body\n\nMude o Response Body para **Expression** antes de usar as chaves. Sem isso, o texto sai com as chaves e tudo.",
         "height": 200,
         "width": 240,
         "color": 5
@@ -81,6 +81,22 @@
       ],
       "id": "8ddc7127-9798-4da3-af2d-c313cd38a03f",
       "name": "Nota resposta"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code\n\nNum GET, o navegador também serve.",
+        "height": 420,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        552,
+        -480
+      ],
+      "id": "67902189-4277-4505-a5ab-e29cb4a1a8d8",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {

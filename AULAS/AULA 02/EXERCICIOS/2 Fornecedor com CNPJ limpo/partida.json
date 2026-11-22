@@ -135,8 +135,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\n1. No Limpar Dados, deixe o nome da empresa com a primeira letra de cada palavra em maiúscula e o CNPJ só com números. A categoria passa como veio\n2. No IF, mande para a tabela só o CNPJ com 14 dígitos\n\n**Como testar**\nCrie antes uma Data Table fornecedores com as colunas empresa, cnpj e categoria. Escolha ela no Guardar Fornecedor e clique em Execute workflow\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 440,
+        "content": "## Leia primeiro\n\n### O que fazer\n\n1. No **Limpar Dados**, deixe o nome da empresa com a primeira letra de cada palavra em maiúscula e o CNPJ só com números. A categoria passa como veio.\n2. No IF, mande para a tabela só o CNPJ com 14 dígitos.\n\n### Como testar\n\nCrie antes uma Data Table `fornecedores` com as colunas `empresa`, `cnpj` e `categoria`. Escolha ela no **Guardar Fornecedor** e clique em **Execute workflow**.\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 420,
         "width": 760,
         "color": 4
       },
@@ -144,15 +144,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -580
+        -560
       ],
       "id": "56f7f743-bbe6-4167-a291-5df0d071af06",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "As mesmas expressões que arrumaram o nome e o WhatsApp na Orbita Labs v2 servem aqui",
-        "height": 220,
+        "content": "### Dica\n\nAs mesmas expressões que arrumaram o nome e o WhatsApp na Orbita Labs v2 servem aqui.",
+        "height": 200,
         "width": 220,
         "color": 5
       },
@@ -167,8 +167,8 @@
     },
     {
       "parameters": {
-        "content": "Dica. `.length` conta quantos caracteres o texto tem",
-        "height": 220,
+        "content": "### Dica\n\n`.length` conta quantos caracteres o texto tem.",
+        "height": 160,
         "width": 220,
         "color": 5
       },
@@ -183,7 +183,7 @@
     },
     {
       "parameters": {
-        "content": "Escolha a sua tabela. Crie no seu n8n uma Data Table fornecedores com as colunas empresa, cnpj e categoria",
+        "content": "### Escolha a sua tabela\n\nCrie no seu n8n uma Data Table `fornecedores` com as colunas `empresa`, `cnpj` e `categoria`",
         "height": 200,
         "width": 240,
         "color": 3

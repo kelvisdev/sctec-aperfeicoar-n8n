@@ -30,8 +30,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que fazer**\nNo Converter Tipos, crie os campos produto (String), quantidade e preco (Number), total (Number, quantidade vezes preço) e entregue (Boolean)\n\n**Como testar**\nClique em Execute workflow e abra o Converter Tipos. O total tem que dar 50 e o entregue tem que sair true\n\n**Gabarito**\nEstá no arquivo gabarito.json da mesma pasta. Tente antes de abrir",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### O que fazer\n\nNo **Converter Tipos**, crie estes campos.\n\n- `produto` como String.\n- `quantidade` e `preco` como Number.\n- `total` como Number, com a quantidade vezes o preço.\n- `entregue` como Boolean.\n\n### Como testar\n\nClique em **Execute workflow** e abra o **Converter Tipos**. O total tem que dar 50 e o `entregue` tem que sair `true`\n\n### Gabarito\n\nEstá no arquivo `gabarito.json` da mesma pasta. Tente antes de abrir.",
+        "height": 480,
         "width": 560,
         "color": 4
       },
@@ -39,15 +39,15 @@
       "typeVersion": 1,
       "position": [
         -48,
-        -460
+        -520
       ],
       "id": "65f30d94-033e-4527-a9c2-947867f054b4",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "Nos dados fixados tudo está entre aspas, ou seja, é texto. Até o 4 e o 12.50",
-        "height": 200,
+        "content": "### Tudo é texto\n\nNos dados fixados tudo está entre aspas, ou seja, é texto. Até o 4 e o 12.50.",
+        "height": 180,
         "width": 220,
         "color": 5
       },
@@ -62,7 +62,7 @@
     },
     {
       "parameters": {
-        "content": "Colocar sim direto num campo Boolean dá erro. Pense numa comparação que devolva true ou false",
+        "content": "### Boolean\n\nColocar `sim` direto num campo Boolean dá erro. Pense numa comparação que devolva `true` ou `false`",
         "height": 200,
         "width": 240,
         "color": 5

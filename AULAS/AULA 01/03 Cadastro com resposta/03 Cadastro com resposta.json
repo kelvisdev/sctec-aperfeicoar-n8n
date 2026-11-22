@@ -60,8 +60,8 @@
     },
     {
       "parameters": {
-        "content": "## Leia primeiro\n**O que faz**\nRecebe um cadastro com nome e email por POST e devolve uma mensagem de confirmação para quem chamou\n\n**Como testar**\nClique em Execute workflow, copie a Test URL do Disparo de Gatilho e mande um POST com nome e email no corpo, pelo Insomnia ou pelo terminal. O comando está no README\n\n**O que treinar**\nO texto da resposta tem um erro de digitação. Ache e corrija. Depois guarde o email também no Declarar Variaveis\n\n**Erros comuns**\nMandar GET em vez de POST dá 404. Se o nome sair vazio, confira se o campo no corpo se chama nome mesmo, tudo em minúsculas",
-        "height": 420,
+        "content": "## Leia primeiro\n\n### O que faz\n\nRecebe um cadastro com nome e email por POST e devolve uma mensagem de confirmação para quem chamou.\n\n### Como testar\n\nClique em **Execute workflow**, copie a Test URL do **Disparo de Gatilho** e mande um POST com `nome` e `email` no corpo. O comando está no README.\n\n### O que treinar\n\nO texto da resposta tem um erro de digitação. Ache e corrija. Depois guarde o email também no **Declarar Variaveis**.\n\n### Erros comuns\n\nMandar GET em vez de POST dá 404. Se o nome sair vazio, confira se o campo no corpo se chama `nome` mesmo, tudo em minúsculas.",
+        "height": 520,
         "width": 680,
         "color": 4
       },
@@ -69,15 +69,15 @@
       "typeVersion": 1,
       "position": [
         -96,
-        -520
+        -620
       ],
       "id": "28faae5c-72a6-44f1-a052-2d02b4e9bdd9",
       "name": "Leia primeiro"
     },
     {
       "parameters": {
-        "content": "O Respond está em Using Respond to Webhook Node, então quem responde é o último nó. Allowed Origins com * deixa uma página da internet chamar o fluxo",
-        "height": 200,
+        "content": "### Quem responde\n\nO Respond está em **Using Respond to Webhook Node**, então quem responde é o último nó. O Allowed Origins com `*` deixa uma página da internet chamar o fluxo.",
+        "height": 240,
         "width": 240,
         "color": 5
       },
@@ -92,8 +92,8 @@
     },
     {
       "parameters": {
-        "content": "O email não passou pelo Declarar Variaveis. Por isso a expressão busca no primeiro nó, pelo nome dele. O nome entre parênteses tem que ser igual ao do nó",
-        "height": 200,
+        "content": "### Buscar um nó mais atrás\n\nO email não passou pelo **Declarar Variaveis**. Por isso a expressão busca no primeiro nó, pelo nome dele. O nome entre parênteses tem que ser igual ao do nó.",
+        "height": 240,
         "width": 240,
         "color": 5
       },
@@ -105,6 +105,22 @@
       ],
       "id": "dddcbcf9-5786-4a22-ab93-9d7f8c85d7c2",
       "name": "Nota resposta"
+    },
+    {
+      "parameters": {
+        "content": "### Testar a chamada\n\nClique em Execute workflow e use a Test URL, ou publique o fluxo e use a Production URL. Depois mande a chamada por uma destas ferramentas.\n\n- [Postman](https://www.postman.com/downloads/)\n- [Insomnia](https://insomnia.rest/download)\n- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), extensão do VS Code",
+        "height": 380,
+        "width": 320,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        696,
+        -620
+      ],
+      "id": "8f98d11c-4f86-497d-ab42-a6800fbc7953",
+      "name": "Testar a chamada"
     }
   ],
   "connections": {
